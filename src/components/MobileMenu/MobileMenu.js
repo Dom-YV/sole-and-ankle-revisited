@@ -3,8 +3,6 @@ import React from 'react';
 import styled from 'styled-components/macro';
 import { DialogOverlay, DialogContent } from '@reach/dialog';
 
-import { COLORS, QUERIES } from '../../constants';
-
 import UnstyledButton from '../UnstyledButton';
 import Icon from '../Icon';
 import VisuallyHidden from '../VisuallyHidden';
@@ -72,14 +70,14 @@ const Nav = styled.nav`
 
   a {
     text-transform: uppercase;
-    color: ${COLORS.gray[900]};
+    color: var(--color-gray-900);
     text-decoration: none;
     font-weight: 600;
     font-size: ${18/16}rem;
   }
 
   a:first-of-type {
-    color: ${COLORS.secondary};
+    color: var(--color-secondary);
   }
 `
 
@@ -91,7 +89,7 @@ const NavFooter = styled.footer`
   height: 100%;
 
   a {
-    color: ${COLORS.gray[700]};
+    color: var(--color-gray-700);
     text-decoration: none;
     font-weight: 500;
     font-size: ${14/16}rem;
